@@ -1,0 +1,21 @@
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 15px;
+}
+tbody {
+    text-align: center;
+}
+thead {
+    background-color: antiquewhite;
+    text-align: center;
+
+}
+tfoot {
+    background-color: tan;
+    text-align: right;
+}
+

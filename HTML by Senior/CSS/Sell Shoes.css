@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    font-family: sans-serif;
+    font-weight: 400;
+  }
+  .main {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(96, 95, 95);
+  }
+  .nav-part-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+  .nav img {
+    height: 50px;
+    width: auto;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  .nav-part-1 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  .nav-part-1 ul li {
+    margin-right: 40px;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* cursor: pointer; */
+  }
+  .nav-part-2 i {
+    margin-right: 40px;
+    font-size: 21px;
+    cursor: pointer;
+  }
+  .content {
+    height: calc(100% - 110px);
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .content-left {
+    height: 100%;
+    width: 40%;
+    padding: 88px 100px;
+  }
+  .content-left h5 {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  .content-left h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 25px;
+  }
+  .content-left p {
+    font-size: 20px;
+    color: #000;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .btn {
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    padding: 12px 40px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+  }
+  .content-rigth {
+    height: 100%;
+    width: 60%;
+    padding: 110px 100px;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  .content-rigth ::-webkit-scrollbar {
+    display: none;
+  }
+  .product {
+    height: 370px;
+    width: 250px;
+    background-color: #1011;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(143, 10, 143, 0.067);
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .product img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    bottom: 20%;
+  }
+  .product h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 28%;
+  }
+  .catagory {
+    position: absolute;
+    bottom: 20%;
+    font-weight: 500;
+  }
+  .color {
+    position: absolute;
+    bottom: 15%;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .price {
+    font: 16px;
+    position: absolute;
+    bottom: 5%;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      padding: 20px;
+      height: auto;
+    }
+    .nav img {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .nav-part-1 ul {
+      flex-direction: column;
+    }
+    .nav-part-1 ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .nav-part-2 {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .nav-part-2 i {
+      margin-right: 20px;
+    }
+    .content {
+      flex-direction: column;
+    }
+    .content-left {
+      width: 100%;
+      padding: 40px 20px;
+    }
+    .content-left h1 {
+      font-size: 40px;
+    }
+    .content-left p {
+      font-size: 16px;
+      width: 100%;
+    }
+    .content-rigth {
+      width: 100%;
+      padding: 20px;
+    }
+    .product {
+      width: 80%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .product img {
+      position: relative;
+      height: auto;
+    }
+    .product h4,
+    .catagory,
+    .color,
+    .price {
+      position: static;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav {
+      padding: 10px;
+    }
+    .content-left {
+      padding: 20px;
+    }
+    .content-left h1 {
+      font-size: 30px;
+    }
+    .content-left p {
+      font-size: 14px;
+    }
+    .btn {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+    .product {
+      width: 100%;
+      height: auto;
+    }
+    .product img {
+      height: auto;
+    }
+    .product h4,
+    .catagory,
+    .color,
+    .price {
+      font-size: 14px;
+    }
+  }
